@@ -58,6 +58,7 @@ module Searchlogic
             scope.send(name, *args, &block)
           end
         end
+        ruby2_keywords :method_missing
 
         def normalize_scope_name(scope_name)
           case
